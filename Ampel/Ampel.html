@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+siehe auch:
+https://www.w3schools.com/css/css3_animations.asp
+https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1 
+-->
+<style>
+
+.bodyampel{
+    background-color: black;
+    color: black;
+}
+
+.divRed {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius:50%;
+  animation-name: color1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.divYelow {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(234, 105, 0);
+  border-radius:50%;
+  animation-name: color2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.divGreen {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(43, 255, 0);
+  border-radius:50%;
+  animation-name: color3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color1 {
+  0%   {background-color:rgb(255, 12, 12);}
+  25%  {background-color:rgb(255, 0, 0); }
+  50%  {background-color: rgb(0, 0, 0);}
+  75%  {background-color:rgb(0, 0, 0);}
+  100% {background-color: rgb(0, 0, 0);}
+}
+
+@keyframes color2 {
+  0%   {background-color:rgb(0, 0, 0);}
+  25%  {background-color:rgb(0, 0, 0); }
+  50%  {background-color: rgb(255, 162, 0);}
+  75%  {background-color:rgb(0, 0, 0);}
+  100% {background-color: rgb(0, 0, 0);}
+}
+
+@keyframes color3 {
+  0%   {background-color:rgb(0, 0, 0);}
+  25%  {background-color:rgb(0, 0, 0); }
+  50%  {background-color: rgb(0, 0, 0);}
+  75%  {background-color:green;}
+  100% {background-color:green;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Ampel</h1>
+
+<table class="bodyampel">
+    <tr><td><div class="divRed"></div></td></tr>
+    <tr><td><div class="divYelow"></div></td></tr>
+    <tr><td><div class="divGreen"></div></td></tr>
+</table>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
+
+</body>
+</html>

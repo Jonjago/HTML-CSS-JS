@@ -1,0 +1,7 @@
+Header:
+	Trade
+	Store
+	Sell
+	Giveaway
+	Wiki
+
